@@ -26,6 +26,7 @@ namespace ETMoneyShopAutomation.PageObject
         }
         public void ClickTwitter()
         {
+            
             driver.FindElement(twitter).Click();
         }
 
