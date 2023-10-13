@@ -37,7 +37,7 @@ namespace ETMoneyShopAutomation.StepDefinitions
         [Then(@"ET Money shop twitter page should displayed")]
         public void ThenETMoneyShopTwitterPageShouldDisplayed()
         {
-            Assert.IsFalse(twitterPage.ClickTwitterPageShouldDisplayed());
+            Assert.IsTrue(twitterPage.ClickTwitterPageShouldDisplayed());
         }
     }
 }

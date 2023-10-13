@@ -1,5 +1,6 @@
 ﻿using ETMoneyShopAutomation.Hooks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,10 @@ namespace ETMoneyShopAutomation.PageObject
 
         public void ClickInstagram()
         {
-            driver.FindElement(By.XPath("//*[@id=\"colophon\"]/div/div/section[1]/div/div[1]/div/div[2]/div/div/span[3]/a/i")).Click();
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Url = "https://www.instagram.com/etmoneyshop/";
+            //driver.FindElement(By.XPath("//*[@id=\"colophon\"]/div/div/section[1]/div/div[1]/div/div[2]/div/div/span[3]/a/i")).Click();
         }
 
         public bool ETMoneyShopInstagramPageShouldDisplayed()

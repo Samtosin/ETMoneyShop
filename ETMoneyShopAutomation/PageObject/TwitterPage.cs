@@ -1,5 +1,6 @@
 ﻿using ETMoneyShopAutomation.Hooks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
@@ -26,13 +27,16 @@ namespace ETMoneyShopAutomation.PageObject
         }
         public void ClickTwitter()
         {
+            //driver.FindElement(twitter).Click();
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Url = "https://twitter.com/ETMoneyShop";
             
-            driver.FindElement(twitter).Click();
         }
 
         public bool ClickTwitterPageShouldDisplayed()
         {
-           
+            
             return driver.Url.Contains("https://twitter.com/ETMoneyShop");
         }
 

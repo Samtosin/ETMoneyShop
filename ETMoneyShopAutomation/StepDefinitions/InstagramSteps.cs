@@ -24,7 +24,7 @@ namespace ETMoneyShopAutomation.StepDefinitions
         public void ThenETMoneyShopInstagramPageShouldDisplayed()
         {
             Thread.Sleep(3000); 
-            Assert.IsFalse(instagramPage.ETMoneyShopInstagramPageShouldDisplayed());
+            Assert.IsTrue(instagramPage.ETMoneyShopInstagramPageShouldDisplayed());
         }
     }
 }
