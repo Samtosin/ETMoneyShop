@@ -18,7 +18,7 @@ namespace ETmoneyShop.PageObject
             driver = WebHooks.driver;
         }
 
-        private By terms = By.CssSelector("#colophon > div > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-c952c9f.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div.elementor-column.elementor-col-66.elementor-top-column.elementor-element.elementor-element-7ca7a13 > div > div > div > p:nth-child(2) > a");
+        private By terms = By.XPath("//*[@id=\"colophon\"]/div/div/section[1]/div/div[2]/div/div/div/p[2]/a[2]");
 
         public void ClickTermsAndConditions()
         {

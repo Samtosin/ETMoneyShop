@@ -16,7 +16,7 @@ namespace ETMoneyShopAutomation.PageObject
         {
             driver = WebHooks.driver;
         }
-        private By cookie = By.XPath("//*[@id=\"colophon\"]/div/div/section[1]/div/div[2]/div/div/div/p[3]/a");
+        private By cookie = By.XPath("//*[@id=\"colophon\"]/div/div/section[1]/div/div[2]/div/div/div/p[2]/a[3]");
 
         public void ClickCookiesPolicy()
         {

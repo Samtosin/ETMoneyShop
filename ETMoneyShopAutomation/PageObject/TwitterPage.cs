@@ -36,7 +36,7 @@ namespace ETMoneyShopAutomation.PageObject
 
         public bool ClickTwitterPageShouldDisplayed()
         {
-            
+
             return driver.Url.Contains("https://twitter.com/ETMoneyShop");
         }
 
