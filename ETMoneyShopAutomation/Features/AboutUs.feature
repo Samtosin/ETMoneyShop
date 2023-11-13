@@ -1,7 +1,8 @@
-﻿Feature: AboutUs
+Feature: AboutUs
 
 
-A short summary of the feature
+As user on the ETMoney shop website 
+I want to be able to view the about us page
 
 @tag1
 Scenario: Validate user view the about us
